@@ -78,3 +78,13 @@
 //   prompt("You entered wrong number, guess again");
 // }
 // console.log("congratulations you won 500 million");
+
+// Function
+
+function sum(x, y) {
+  s = x + y;
+  return s;
+}
+
+let value = sum(3, 4);
+console.log(value);
