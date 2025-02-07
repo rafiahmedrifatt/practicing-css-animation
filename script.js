@@ -10,7 +10,7 @@ var total = orangePrice + applePrice;
 
 var returnMoney = moneyGiven - total;
 
-// console.log(returnMoney);
+console.log(returnMoney);
 
 // TASK 02
 
@@ -24,14 +24,14 @@ var average = mathematics + Biology + physics + chemistry + bengal / 5;
 
 var n = average.toFixed(2);
 
-// console.log(n);
+console.log(n);
 
 // TASK 3
 
 var givenNumber = 119;
 var x = 119 % 5;
 
-// console.log(x);
+console.log(x);
 
 //**********************************/
 // MODULE 02
@@ -52,7 +52,7 @@ if (burger == 500) {
   coke = 30;
 }
 
-// console.log(coke);
+console.log(coke);
 
 burger >= 500 ? (coke = 0) : (coke = 30);
 // console.log(coke);
@@ -74,7 +74,7 @@ Create a JavaScript program that calculates the Body Mass Index (bmi) and assign
 const height = 1.76;
 const weight = 50;
 
-let bmi = (weight / height) ^ 2;
+let bmi = weight / (height ^ 2);
 
 if (bmi < 18.5) {
   console.log("under weight");
@@ -87,8 +87,6 @@ if (bmi < 18.5) {
     }
   }
 }
-
-// console.log(health);
 
 /***
 
@@ -161,3 +159,27 @@ let num2 = 49;
 
 let num3 = num1 > num2 ? num1 * 2 : num1 + num2;
 console.log(num3);
+
+/***
+
+Ticket fare Calculator
+    - Children (age < 10): free
+    - Students get a 50% discount
+    - Senior citizens (age >= 60) gets a 15% Discount
+    - Otherwise Regular ticket fare 800 tk
+*/
+
+let ticketFare;
+const age = 3;
+
+if (age <= 10) {
+  ticketFare = 0;
+} else if (age > 11 && age < 22) {
+  ticketFare = ticketFare / 2;
+} else if (age <= 50 && age >= 60) {
+  ticketFare *= 0.85;
+} else {
+  ticketFare = 100;
+}
+
+console.log(ticketFare);
