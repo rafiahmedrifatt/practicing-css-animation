@@ -15,5 +15,5 @@ for (let i = 0; i < sentence.length; i++) {
 // console.log(rev);
 
 // shortcut
-const reversed = sentence.split("").reverse().join("");
+const reversed = sentence.split("").reverse().join("|");
 console.log(reversed);
